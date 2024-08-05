@@ -1,3 +1,10 @@
+# clumsy-hotspot
+clumsy-hotspot is a modified version of clumsy that supports Windows Hotspot albeit with some catches:
+- you can't use inbound or outbound filter, use direct ip or just type "true" instead, this will make all packets in your hotspot affected.
+To build clumsy use Zig 0.9.1 (that is what worked for me).
+Enjoy, cheers!
+
+
 # clumsy
 
 __clumsy makes your network condition on Windows significantly worse, but in a managed and interactive manner.__
