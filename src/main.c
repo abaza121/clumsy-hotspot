@@ -230,7 +230,7 @@ void init(int argc, char* argv[]) {
         )
     );
 
-    IupSetAttribute(dialog, "TITLE", "clumsy " CLUMSY_VERSION);
+    IupSetAttribute(dialog, "TITLE", "clumsy-forward " CLUMSY_VERSION);
     IupSetAttribute(dialog, "SIZE", "480x"); // add padding manually to width
     IupSetAttribute(dialog, "RESIZE", "NO");
     IupSetCallback(dialog, "SHOW_CB", (Icallback)uiOnDialogShow);

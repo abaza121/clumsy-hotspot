@@ -80,7 +80,7 @@ void dumpPacket(char *buf, int len, PWINDIVERT_ADDRESS paddr) {
 int divertStart(const char *filter, char buf[]) {
     int ix;
 
-    divertHandle = WinDivertOpen(filter, WINDIVERT_LAYER_NETWORK, DIVERT_PRIORITY, 0);
+    divertHandle = WinDivertOpen(filter, WINDIVERT_LAYER_NETWORK_FORWARD, DIVERT_PRIORITY, 0);
     if (divertHandle == INVALID_HANDLE_VALUE) {
         DWORD lastError = GetLastError();
         if (lastError == ERROR_INVALID_PARAMETER) {

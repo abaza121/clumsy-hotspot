@@ -19,7 +19,7 @@ pub fn build(b: *std.build.Builder) void {
     const arch_tag = @tagName(arch);
     const conf_tag = @tagName(conf);
     const sign_tag = @tagName(windivert_sign);
-    const windivert_dir = b.fmt("WinDivert-2.2.0-{s}", .{sign_tag});
+    const windivert_dir = b.fmt("WinDivert-2.2.2-{s}", .{sign_tag});
 
     debug.print("- arch: {s}, conf: {s}, sign: {s}\n", .{@tagName(arch), @tagName(conf), @tagName(windivert_sign)});
     debug.print("- windows_kit_bin_root: {s}\n", .{windows_kit_bin_root});
